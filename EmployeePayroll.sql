@@ -60,3 +60,23 @@ select count(Gender) as 'male' from employee_payroll where Gender='M'
 select count(Gender) as 'female' from employee_payroll where Gender='F' 
 
 select * from employee_payroll
+
+--UC8
+
+alter table employee_payroll add 
+phone varchar(13),
+department varchar(100) not null default 'CSE',
+address varchar(250) not null default 'Bangalore'
+
+select * from employee_payroll
+
+--UC9
+
+alter table employee_payroll add
+basicPay float,
+deduction float,
+taxablePay float,
+incomeTax float,
+netPay float;
+
+select * from employee_payroll
