@@ -11,7 +11,7 @@ create table employee_payroll
  name varchar(100) not null,
  salary int not null,
  start_date date not null
-);
+)
 
 --UC3
 
@@ -80,3 +80,13 @@ incomeTax float,
 netPay float;
 
 select * from employee_payroll
+
+--UC10
+
+insert into employee_payroll values
+('Terisa',700000.0,'2020-08-14','F','8734586245','sales','india',100.0,12000.0,2000.0,1233.0)
+
+insert into employee_payroll values
+('Terisa',500000.0,'2020-08-14','F','8723586245','Marketing','india',100.0,12000.0,2000.0,1233.0)
+
+select * from employee_payroll where name='Terisa'
